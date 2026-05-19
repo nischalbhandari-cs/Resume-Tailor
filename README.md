@@ -7,6 +7,7 @@ The tool analyzes:
 Resume-job match score
 Missing skills/keywords
 Resume improvement suggestions
+
 🎓 Learning Journey
 As a Computer Science student, I built this project to gain hands-on experience with:
 
