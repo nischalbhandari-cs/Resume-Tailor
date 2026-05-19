@@ -1,98 +1,82 @@
-AI Resume Tailor (AI-Powered Resume Analyzer)
-Welcome to my AI-powered Resume Tailor project!
-This Python application compares a resume with a job description using the Google Gemini API and provides personalized feedback to improve job matching.
+# 📄 AI Resume Tailor (AI-Powered Resume Analyzer)
 
-The tool analyzes:
+Welcome to my AI Resume Tailor project! This Python application compares a resume with a job description using the Google Gemini API and provides personalized feedback to improve job matching.
 
-Resume-job match score
-Missing skills/keywords
-Resume improvement suggestions
+## 🎓 Learning Journey
 
-🎓 Learning Journey
-As a Computer Science student, I built this project to gain hands-on experience with:
+As an aspiring AI Software Engineer, I built this project to gain hands-on experience with:
 
-API integration
-Prompt engineering
-Environment variables
-File handling
-AI-powered automation
-This project helped me move beyond beginner Python programs into practical AI-based applications.
+- API integration with Google Gemini
+- Prompt engineering
+- Environment variables and security
+- File handling in Python
+- AI-powered automation
 
-I also learned how to:
+## 🚀 Features
 
-Handle API authentication
-Process AI-generated responses
-Work with structured prompts
-Improve error handling in Python
-🚀 Features
-Reads resume and job description from text files
-Uses Google Gemini AI for analysis
-Generates:
-Match score (0–100)
-Missing keywords/skills
-Resume improvement suggestions
-Password-protected access using .env
-Simple command-line interface
-📂 Project Structure
-ResumeTailor/
-│
-├── main.py
-├── resume.txt
-├── job_description.txt
-├── .env
-├── README.md
-⚙️ How to Setup & Run
-To protect private credentials, the .env file is not included in this repository.
+- Reads resume and job description from text files
+- Uses Google Gemini AI for analysis
+- Generates match score out of 100
+- Shows missing keywords and skills
+- Provides resume improvement suggestions
+- Password protected access
+- Secure API key storage using .env
 
-Step 1: Create .env file
+## ⚙️ How to Setup & Run
+
+### Step 1: Create .env file
+```
 GEMINI_API_KEY=your_actual_key_here
-API_PASSWORD=your_security_password
-Step 2: Create required files
-Create:
+API_PASSWORD=your_password
+```
 
-resume.txt
-job_description.txt
-Paste your resume and job description inside them.
+### Step 2: Create required files
+Add your resume inside resume.txt
+Add job description inside job_description.txt
 
-Step 3: Install dependencies
+### Step 3: Install dependencies
+```
 pip install google-generativeai python-dotenv
-Step 4: Run the program
+```
+
+### Step 4: Run the program
+```
 python main.py
-🧠 Code Breakdown
-dotenv (load_dotenv)
-Loads environment variables securely from the .env file.
+```
 
-os.getenv
-Retrieves stored values like API keys and passwords.
+## 🧠 Code Breakdown
 
-genai.configure
-Authenticates the Gemini API connection using the API key.
+**load_dotenv**
+Loads environment variables securely from .env file.
 
-GenerativeModel
-Represents the Gemini AI model used in the project.
+**os.getenv**
+Retrieves API key and password securely.
 
-generate_content
-Sends the prompt to Gemini AI and receives analysis results.
+**genai.configure**
+Authenticates the Gemini API connection.
 
-try...except
-Handles errors gracefully and prevents program crashes.
+**generate_content**
+Sends resume and job description to Gemini AI for analysis.
 
-File Handling
+**try...except**
+Handles errors gracefully and prevents crashes.
+
+**File Handling**
 Reads resume and job description from text files.
 
-Prompt Engineering
-Structures input prompts to get better AI responses.
+## 🔮 Future Improvements
 
-🔮 Future Improvements
-Add graphical user interface (GUI)
-Export analysis results to PDF
-Support .docx and PDF resumes
-Build a web version using Flask
-⚠️ Note
+- Add GUI interface
+- Export analysis results to PDF
+- Support .docx and PDF resumes
+- Build web version using Flask
+
+## ⚠️ Note
+
 This project was built for learning purposes.
+Some parts of development were assisted using AI tools.
 
-Some parts of development were assisted using AI tools (Google Gemini).
+## 👨‍💻 Created By
 
-👨‍💻 Created By
 Nischal Bhandari
 GitHub: github.com/nischalbhandari-cs
